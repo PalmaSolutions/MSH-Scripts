@@ -1,7 +1,11 @@
 <?php
+/* Building the form to gather the credentials */
 echo '<form method="post" enctype="multipart/form-data"><br /><hr>';
+/* localhost for local MySQL and IP or host for remote MySQL */
 echo '<b>MySQL Hostname/IP:</b></td><td><input name="host" id="host" type="text" size="50">';
+/* the control panel username so that it has access to all databases */
 echo '<b>MySQL Username:</b></td><td><input name="usr" id="usr" type="text" size="50">';
+/* the associated password */
 echo '<b>MySQL Password:</b></td><td><input name="pwd" id="pwd" type="text" size="50">';
 echo '<input name="submit" type="submit" value="Go"><br /><br />';
     if(($_POST['submit']) == "Go") {
